@@ -1,0 +1,72 @@
+body {
+    width: 100vw;
+    margin: 0px;
+}
+header {
+    padding: 8px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.center {
+    text-align: center;
+}
+
+.w-25 {
+    width: 25%;
+}
+
+.w-50 {
+    width: 50%;
+}
+
+.w-75 {
+    width: 75%;
+}
+
+.h-20 {
+    height: 30vh;
+}
+
+.header-logo {
+    border-radius: 50%;
+    width: 42px;
+    height: 42px;
+}
+
+.banner-box {
+    margin: 10px 0px;
+    min-height: 20vh;
+    padding: 10px;
+    background-color: whitesmoke;
+    border-top: 4px solid rgb(221, 221, 221);
+    border-bottom: 4px solid rgb(221, 221, 221);
+}
+
+.product-box {
+    margin: 20px 0px;
+    min-height: 45vh;
+    padding: 10px;
+    background-color: #fff;
+    border-bottom: 4px solid rgb(221, 221, 221);
+    display: flex;
+}
+
+.placeholder {
+    display: inline-block;
+    min-height: 1em;
+    vertical-align: middle;
+    background-color: gray;
+    opacity: 0.5;
+}
+
+.card {
+    background-color: lightgrey;
+    min-height: 10vh;
+    border-radius: 10px;
+    margin: 4px;
+
+}
