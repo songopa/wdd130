@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&family=Poppins&display=swap');
+
+:root {
+    --primary-color: #071013;
+    --secondary-color: #344055;
+    --accent1-color: #F4FFFD;
+    --accent2-color: #BAFF29;
+
+    --heading-font: "Poppins", cursive;
+    --paragraph-font:"Open Sans", sans-serif;
+
+    --nav-background-color: #344055;
+    --nav-link-color: #fff;
+    --nav-hover-link-color: #071013;
+    --nav-hover-background-color: #BAFF29; 
+}
+
+body {
+    font-family: var(--paragraph-font);
+    max-width: 960px;
+    padding: 20px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+}
+
+header {
+    padding: 20px;
+    background-color: var(--accent1-color);
+}
+
+p {
+    padding: 2px 25px;
+}
+
+nav {
+    background-color: var(--nav-background-color);
+    font-size: 1.2rem;
+    display: flex;
+}
+
+nav a {
+    display: block;
+    color: var(--nav-link-color);
+    text-decoration: none;
+    padding: 1rem;
+}
+
+nav a:hover {
+    color: var(--nav-hover-link-color);
+    background-color: var(--nav-hover-background-color);
+}
