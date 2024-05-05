@@ -37,6 +37,7 @@ main img {
     box-shadow: 0 0 30px gray;
     border-radius: 5%;
     margin: 0px 10px 4px;
+    float: right;
 }
 
 aside {
@@ -49,6 +50,12 @@ aside {
 aside img {
     width: 200px;
     height: auto;
+}
+
+aside h2 {
+    position: absolute;
+    top: 20%;
+    left: 45%;
 }
 
 p {
@@ -69,18 +76,6 @@ footer {
     padding: 1rem;
     background-color: #ddd;
     color: #000;
-}
-
-.float-right {
-    float: right;
-}
-
-.clear-floating {
     clear: both;
 }
 
-.overlay-top {
-    position: absolute;
-    top: 20%;
-    left: 45%;
-}
