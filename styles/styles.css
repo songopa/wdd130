@@ -75,6 +75,7 @@ footer {
     border: 1px solid rgba(0, 0, 0, 0.2);
     padding: 1rem;
     background-color: #ddd;
+    width: 500px;
     color: #000;
     clear: both;
 }
