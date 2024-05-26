@@ -5,14 +5,15 @@
     --secondary-color: #344055;
     --accent1-color: #F4FFFD;
     --accent2-color: #107896;
-
+    --accent3-color: #C9F1FD;
+    
     --heading-font: "Poppins", cursive;
     --paragraph-font:"Open Sans", sans-serif;
 
     --nav-background-color: #107896;
     --nav-link-color: #fff;
     --nav-hover-link-color: #071013;
-    --nav-hover-background-color: rgb(186, 255, 41); 
+    --nav-hover-background-color: #baff29; 
 }
 body {
     font-family: var(--paragraph-font);
@@ -62,8 +63,17 @@ nav a:hover {
 }
 
 footer {
+    margin-top: 2rem;
     display: flex;
     justify-content: space-around;
+    align-items: center;
+    color: #fff;
+    background-color: var(--nav-background-color);
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
 }
 
 footer img {
@@ -99,8 +109,101 @@ img {
     border-radius: 5px;
 }
 
+form {
+    padding: 0 2rem;
+    border-radius: 6px;
+}
+label {
+    display: inline-block;
+    margin: 0.4rem 0;
+}
+input[type=text], 
+input[type=password], 
+input[type=number], 
+input[type=email], 
+textarea, 
+select {
+    display: inline-block;
+    width: 100%;
+    padding: 0.3rem 0.7rem;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    background-color: white;
+    border: 0.1rem solid var(--accent3-color);
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=text]:focus, 
+input[type=password]:focus, 
+input[type=number]:focus, 
+input[type=email]:focus, 
+textarea:focus, 
+select:focus {
+    background-color: var(--accent1-color);
+    outline: var(--accent2-color);
+}
+
+textarea {
+    min-height: 5rem;
+}
+
+form button {
+    margin: 6px auto;
+    padding: 0.7rem 2rem;
+    background: var(--accent2-color);
+    border: var(--accent2-color);
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+}
+
+figure {
+    margin: 0 2px;
+}
+
+iframe {
+    border: 0;
+}
+ 
 
 /* Class Selectors */
+
+.container {
+    padding: 2rem;
+}
+
+.card {
+    background-color: whitesmoke;
+    border: 2px solid  rgba(0, 0, 0, 0.7);
+    border-radius: 8px;
+    padding: 1rem;
+}
+
+.d-flex {
+    display: flex;
+    
+    align-items: center;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.justify-around {
+    justify-content: space-around;
+}
+
+.d-inline {
+    display: inline;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 
 .hero {
     position: relative;
@@ -137,10 +240,6 @@ img {
     grid-auto-rows: auto; */
 }
  
-.grid-adventure figure {
-    margin: 0 2px;
-}
- 
 .grid-adventure figcaption {
     text-align: center;
     background-color: #107896;
@@ -148,6 +247,12 @@ img {
     font: italic smaller sans-serif;
 }
 
-
-
+.staff-box {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    min-height: 250px;
+    background-color: var(--accent3-color);
+}
 
