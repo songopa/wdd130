@@ -172,15 +172,13 @@ iframe {
 
 
 aside {
-    /* background-color: var(--accent3-color); */
     border: 1px solid  rgba(201, 241, 252, 0.9);
     border-radius: 0.5rem;
     color: #333;
     position: relative;
-    grid-row-end: 0;
+    grid-row-end: auto;
     min-height: 400px;
     text-align: center;
-    /* align-items: center; */
     margin-right: 1rem ;
 }
 
