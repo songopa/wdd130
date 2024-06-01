@@ -5,7 +5,7 @@
     --secondary-color: #344055;
     --accent1-color: #F4FFFD;
     --accent2-color: #107896;
-    --accent3-color: #C9F1FD;
+    --accent3-color: #c9f1fc;
     
     --heading-font: "Poppins", cursive;
     --paragraph-font:"Open Sans", sans-serif;
@@ -25,6 +25,10 @@ h1, h2, h3, h4, h5, h6 {
     font-family: var(--heading-font);
     color: var(--accent2-color);
     text-align: center;
+}
+
+a {
+    text-decoration: none;
 }
 
 header {
@@ -81,7 +85,6 @@ footer img {
     height: 20px;
 }
 
-
 article {
     position: absolute;
     max-width: 90%;
@@ -123,10 +126,10 @@ input[type=number],
 input[type=email], 
 textarea, 
 select {
-    display: inline-block;
-    width: 100%;
-    padding: 0.3rem 0.7rem;
-    margin-bottom: 1rem;
+    display: block;
+    width: 90%;
+    padding: 0.5rem 0.7rem;
+    margin-bottom: auto;
     font-size: 1rem;
     background-color: white;
     border: 0.1rem solid var(--accent3-color);
@@ -149,6 +152,7 @@ textarea {
 }
 
 form button {
+    display: block;
     margin: 6px auto;
     padding: 0.7rem 2rem;
     background: var(--accent2-color);
@@ -165,26 +169,96 @@ figure {
 iframe {
     border: 0;
 }
- 
+
+
+aside {
+    /* background-color: var(--accent3-color); */
+    border: 1px solid  rgba(201, 241, 252, 0.9);
+    border-radius: 0.5rem;
+    color: #333;
+    position: relative;
+    grid-row-end: 0;
+    min-height: 400px;
+    text-align: center;
+    /* align-items: center; */
+    margin-right: 1rem ;
+}
+
+table thead {
+    background-color: var(--accent2-color);
+    color: #fff;
+}
+
+th {
+    width: 700px;
+}
 
 /* Class Selectors */
+
+.grid {
+    display: grid;
+    grid-template-columns: 65% auto;
+}
 
 .container {
     padding: 2rem;
 }
 
+.mx-2 {
+    margin: 0 2rem;
+}
+
+.mx-4 {
+    margin: 0 4rem;
+}
+
+.my-2 {
+    margin: 2rem 0;
+}
+
+.my-4 {
+    margin: 4rem 0;
+}
+
+.mb-2 {
+    margin-bottom: 2rem;
+}
+
+.mb-4 {
+    margin-bottom: 5rem;
+}
+
 .card {
     background-color: whitesmoke;
-    border: 2px solid  rgba(0, 0, 0, 0.7);
+    border: 1px solid  rgba(0, 0, 0, 0.7);
     border-radius: 8px;
     padding: 1rem;
+    text-wrap: wrap;
 }
 
 .d-flex {
     display: flex;
-    
+    flex-wrap: wrap;
     align-items: center;
+    align-content: center;
+    /* margin: 0 -0.75rem; */
 }
+
+.col-25 {
+    flex: 0 0 auto;
+    width: 20%;
+}
+
+.col-75 {
+    flex: 0 0 auto;
+    width: 70%;
+}
+
+.col-50 {
+    flex: 0 0 auto;
+    width: 45%;
+}
+
 
 .justify-between {
     justify-content: space-between;
@@ -205,13 +279,19 @@ iframe {
 }
 
 
-.hero {
+.position-relative {
     position: relative;
 }
 
 .hero-image {
     width: 100%;
     height: auto;
+    object-fit: cover;
+}
+
+.home-image {
+    width: 100%;
+    height: 400px;
     object-fit: cover;
 }
 
@@ -226,13 +306,24 @@ iframe {
     padding: 0 5px;
 }
 
+.home h1 {
+    position: absolute;
+    top: 1.5rem;
+    left: 5%;
+    color: var(--nav-hover-background-color);
+    z-index: 2;
+    /* background: rgba(0, 0, 0, 0.7); */
+    border-radius: 2px;
+    padding: 0 5px;
+}
+
 .flex-history {
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
 
-.grid-adventure {
+.flex-adventure {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -240,7 +331,7 @@ iframe {
     grid-auto-rows: auto; */
 }
  
-.grid-adventure figcaption {
+.flex-adventure figcaption {
     text-align: center;
     background-color: #107896;
     color: #fff;
@@ -256,3 +347,90 @@ iframe {
     background-color: var(--accent3-color);
 }
 
+main .card{
+    background-color: #c9f1fc;
+    border: none;
+    color: #000;
+}
+
+main .card h3{
+    color: #107896;
+    border: none;
+    margin-top: 0;
+}
+
+.push.card {
+    border: none;
+    background-color: var(--accent2-color);
+    min-width: 220px;
+    min-height: 180px;
+}
+
+.testimonial.card {
+    border: 2px solid  rgba(201, 241, 252, 0.9);
+    background: none;
+    max-width: 350px;
+    min-height: 200px;
+    text-align: center;
+    align-content: center;
+}
+
+.trips {
+    width: 960px;
+}
+
+.trip-clear-box {
+    width: 480px;
+    height: 320px;
+    text-wrap: wrap;
+    text-align: center;
+}
+
+.trip.card {
+    border: none;
+    border-radius: 0;
+    background: var(--accent2-color);
+    width: 448px;
+    height: 288px;
+    text-align: center;
+    align-content: center;
+    color: #fff;
+}
+
+.trip.card h2 {
+    color: var(--nav-hover-background-color);
+}
+.trips img {
+    width: 480px;
+    border-radius: 0;
+    height: 320px;
+}
+
+.btn-primary {
+    margin: 6px auto;
+    padding: 0.7rem 2rem;
+    background: var(--accent2-color);
+    border: var(--accent2-color);
+    border-radius: 8px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.btn-secondary {
+    margin: 6px auto;
+    padding: 0.7rem 2rem;
+    background: var(--nav-hover-background-color);
+    border: var(--accent2-color);
+    border-radius: 8px;
+    color: #000;
+    cursor: pointer;
+}
+
+.newsletter.card {
+    border: 2px solid  rgba(201, 241, 252, 0.9);
+    background: none;
+    width: 800px;
+    min-height: 200px;
+    text-align: center;
+    align-content: center;
+}
